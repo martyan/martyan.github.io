@@ -40,7 +40,7 @@
         "prop-types": "^15.7.2",
         "react": "^16.8.3",
         "react-color": "^2.19.3",
-        "react-customizable-progressbar": "^1.0.2",
+        "react-customizable-progressbar": "^1.0.3",
         "react-dom": "^16.14.0",
         "react-ga": "^2.7.0",
         "react-helmet": "^5.2.0",

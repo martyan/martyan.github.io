@@ -36,7 +36,7 @@ const IndexPage = () => (
     <div className="martinjuzl">
         <SEO
             title="Martin Juzl | Front-end developer"
-            keywords={[`martin`, `juzl`, `front-end`, `developer`, `nhlgram`, `github`, `react`, `redux`]}
+            keywords={[`martin`, `juzl`, `front-end`, `developer`, `github`, `react`, `redux`]}
         />
 
         <section className="intro">
