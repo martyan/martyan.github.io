@@ -4,13 +4,13 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-import ReactGA from 'react-ga'
+import ReactGA from 'react-ga4'
 
 export const onClientEntry = () => {
     ReactGA.initialize('G-4GW3LRZ67W')
-    ReactGA.pageview(window.location.pathname)
+    ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
 }
 
 export const onRouteUpdate = ({ location, prevLocation }) => {
-    ReactGA.pageview(location.pathname)
+    ReactGA.send({ hitType: 'pageview', page: location.pathname });
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import ReactGA from 'react-ga'
+import ReactGA from 'react-ga4'
 
 const proxy = 'https://cors.kylekarpack.workers.dev/corsproxy/?apiurl='
 const url = proxy + 'https://github.com/martyan'

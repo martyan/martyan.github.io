@@ -10723,10 +10723,10 @@ react-color@^2.19.3:
     reactcss "^1.2.0"
     tinycolor2 "^1.4.1"
 
-react-customizable-progressbar@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-customizable-progressbar/-/react-customizable-progressbar-1.0.3.tgz#db4151802ae844eb051c38aa238e68bffb848452"
-  integrity sha512-aqkZoexIfXXiQgFvo1++7GaxAKAQCb/zj5lRMj6oniZjn9CSIhowr3dSnGnvvvygvegVcPGEYK8shPV5MZasSQ==
+react-customizable-progressbar@^1.0.3:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-customizable-progressbar/-/react-customizable-progressbar-1.2.0.tgz#6619ca2126a98981ad2dade6dc7b14fd1ccf2873"
+  integrity sha512-zNaFa8ynfslfVt5mqgDcIQgx9/UN0ohGH0wj1apA4DauMPd1bYNk3KDSu+sdbfhONNVDC8TOWSr6hH3tyX4oHw==
 
 react-dev-utils@^11.0.3:
   version "11.0.4"
@@ -10778,10 +10778,10 @@ react-fast-compare@2.0.4, react-fast-compare@^2.0.2:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
-react-ga@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.7.0.tgz#24328f157f31e8cffbf4de74a3396536679d8d7c"
-  integrity sha512-AjC7UOZMvygrWTc2hKxTDvlMXEtbmA0IgJjmkhgmQQ3RkXrWR11xEagLGFGaNyaPnmg24oaIiaNPnEoftUhfXA==
+react-ga4@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-ga4/-/react-ga4-2.0.0.tgz#d125807cc30b087a6aa24401ec5f1f1c2d176fe9"
+  integrity sha512-WHi98hMunzh4ngRdNil8NN6Qly3ZZUkprhbgSqA+NFzovp8zqpYV3jcbKL9FnMdeBQHGhv8AVNCT2oFEE+EFXA==
 
 react-helmet@^5.2.0:
   version "5.2.1"
