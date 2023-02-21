@@ -7,7 +7,7 @@
 import ReactGA from 'react-ga'
 
 export const onClientEntry = () => {
-    ReactGA.initialize('UA-28244283-11')
+    ReactGA.initialize('G-4GW3LRZ67W')
     ReactGA.pageview(window.location.pathname)
 }
 
