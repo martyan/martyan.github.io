@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import ReactGA from 'react-ga'
 
-const proxy = 'https://urlreq.appspot.com/req?method=GET&url='
+const proxy = 'https://cors.kylekarpack.workers.dev/corsproxy/?apiurl='
 const url = proxy + 'https://github.com/martyan'
 
 const GitHubGraph = () => {
