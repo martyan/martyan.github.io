@@ -12,20 +12,18 @@ import dailyNinjaLogo from '../images/dailyninja.svg'
 import cesivNHLLogo from '../images/cesivnhl.svg'
 
 import reactLogo from '../images/react.svg'
-import reduxLogo from '../images/redux.svg'
-import htmlLogo from '../images/html.svg'
-import cssLogo from '../images/css.svg'
 import sassLogo from '../images/sass.svg'
-import webpackLogo from '../images/webpack.svg'
-import babelLogo from '../images/babel.svg'
 import firebaseLogo from '../images/firebase.svg'
 import nextLogo from '../images/nextjs.svg'
-import psLogo from '../images/ps.svg'
-import aiLogo from '../images/ai.svg'
+import tsLogo from '../images/typescript.svg'
+import gitlabLogo from '../images/gitlab.svg'
+import vercelLogo from '../images/vercel.svg'
 
 import surfImg from '../images/surf.svg'
 import GitHubGraph from '../components/GitHubGraph'
 import './index.scss'
+
+const INTERVAL = 2800
 
 const IndexPage = () => (
     <div className="martinjuzl">
@@ -62,48 +60,34 @@ const IndexPage = () => (
         <Fade bottom>
             <section className="stack">
                 <h2 className="text">
-                    <span>My favorite techs are</span>
+                    <span>My favorite technologies are</span>
                     <br className="mobile" />
                     <TextLoop
-                        interval={2500}
+                        interval={INTERVAL}
                         springConfig={{ stiffness: 90 }}
                         className="loop"
                         children={[
-                            'NextJS + Firebase',
-                            'React + Redux',
-                            'Webpack + Babel',
-                            'HTML5 + CSS3 (SASS)',
-                            'Adobe PS + AI'
-                            /*, 'REST API'*/
+                            'TypeScript + React + SASS',
+                            'NextJS + Vercel',
+                            'Gitlab CI/CD, Firebase',
                         ]}
                     />
                 </h2>
                 <h2 className="logos">
-                    <TextLoop interval={2500} springConfig={{ stiffness: 90 }} className="loop">
+                    <TextLoop interval={INTERVAL} springConfig={{ stiffness: 90 }} className="loop">
                         <div className="logo">
-                            <img src={nextLogo} alt="NextJS" />
-                            <img src={firebaseLogo} alt="Firebase" />
-                        </div>
-                        <div className="logo">
+                            <img src={tsLogo} alt="TypeScript" />
                             <img src={reactLogo} alt="React" />
-                            <img src={reduxLogo} alt="Redux" />
-                        </div>
-                        <div className="logo">
-                            <img src={webpackLogo} alt="Webpack" />
-                            <img src={babelLogo} alt="Babel" />
-                        </div>
-                        <div className="logo">
-                            <img src={htmlLogo} alt="HTML5" />
-                            <img src={cssLogo} alt="CSS3" />
                             <img src={sassLogo} alt="SASS" />
                         </div>
                         <div className="logo">
-                            <img src={psLogo} alt="Adobe Photoshop" />
-                            <img src={aiLogo} alt="Adobe Illustrator" />
+                            <img src={nextLogo} alt="NextJS" />
+                            <img src={vercelLogo} alt="Vercel" />
                         </div>
-                        {/*<div className="logo">*/}
-                            {/*<img src={restLogo} alt="REST API" />*/}
-                        {/*</div>*/}
+                        <div className="logo">
+                            <img src={gitlabLogo} alt="Gitlab CI/CD" />
+                            <img src={firebaseLogo} alt="Firebase" />
+                        </div>
                     </TextLoop>
                 </h2>
             </section>

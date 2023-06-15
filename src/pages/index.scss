@@ -101,7 +101,9 @@
     .intro {
 
         position: relative;
-        padding: 50px 0 70px;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
 
         ::selection {
             background: #333;
