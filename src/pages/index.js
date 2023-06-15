@@ -7,12 +7,8 @@ import ReactGA from 'react-ga4'
 import SEO from '../components/seo'
 
 import githubLogo from '../images/github.svg'
-import githubLogoDark from '../images/github_dark.svg'
-
-import entrydoLogo from '../images/entrydo.svg'
-import skejtparkyLogo from '../images/skejtparky.svg'
+import skejtparkyLogo from '../images/skatespoty.svg'
 import dailyNinjaLogo from '../images/dailyninja.svg'
-import nhlgramLogo from '../images/nhlgram.svg'
 import cesivNHLLogo from '../images/cesivnhl.svg'
 
 import reactLogo from '../images/react.svg'
@@ -22,7 +18,6 @@ import cssLogo from '../images/css.svg'
 import sassLogo from '../images/sass.svg'
 import webpackLogo from '../images/webpack.svg'
 import babelLogo from '../images/babel.svg'
-import restLogo from '../images/rest.svg'
 import firebaseLogo from '../images/firebase.svg'
 import nextLogo from '../images/nextjs.svg'
 import psLogo from '../images/ps.svg'
@@ -35,26 +30,18 @@ import './index.scss'
 const IndexPage = () => (
     <div className="martinjuzl">
         <SEO
-            title="Martin Juzl | Front-end developer"
-            keywords={[`martin`, `juzl`, `front-end`, `developer`, `github`, `react`, `redux`]}
+            title="Martin Juzl | Front-end Engineer"
+            keywords={['Martin', 'Juzl', 'front-end', 'engineer', 'developer', 'typescript', 'react']}
         />
 
         <section className="intro">
             <div className="container">
                 <h1>
-                    Hi! I'm <b>Martin</b>,{' '}
-                    <span className="mobile">
-                        <br />
-                    </span>
-                    front-end developer{' '}
-                    <span className="mobile">
-                        <br />
-                    </span>
-                    currently living{' '}
-                    <span className="mobile">
-                        <br />
-                    </span>
-                    in{' '}
+                    Hi!&nbsp;I'm&nbsp;<b>Martin</b>,{' '}
+                    <br className="mobile" />
+                    front-end&nbsp;engineer{' '}
+                    <br className="mobile" />
+                    based&nbsp;in&nbsp;
                     <a
                         href="https://www.google.com/maps/place/Brno/@49.2022097,16.4378777,11z"
                         target="_blank"
@@ -75,15 +62,20 @@ const IndexPage = () => (
         <Fade bottom>
             <section className="stack">
                 <h2 className="text">
-                    <span>My favorite technologies are</span>
-                    <span className="mobile">
-                        <br />
-                    </span>
+                    <span>My favorite techs are</span>
+                    <br className="mobile" />
                     <TextLoop
                         interval={2500}
                         springConfig={{ stiffness: 90 }}
                         className="loop"
-                        children={['NextJS + Firebase', 'React + Redux', 'Webpack + Babel', 'HTML5 + CSS3 (SASS)', 'Adobe PS + AI'/*, 'REST API'*/]}
+                        children={[
+                            'NextJS + Firebase',
+                            'React + Redux',
+                            'Webpack + Babel',
+                            'HTML5 + CSS3 (SASS)',
+                            'Adobe PS + AI'
+                            /*, 'REST API'*/
+                        ]}
                     />
                 </h2>
                 <h2 className="logos">
@@ -154,35 +146,33 @@ const IndexPage = () => (
                             >
                                 react-customizable-progressbar
                             </a>{' '}
-                            <span className="middot">&middot;</span>{' '}
-                            check{' '}
-                            <Link
-                                to="/react-customizable-progressbar"
-                                onClick={() =>
-                                    ReactGA.event({
-                                        category: 'User',
-                                        action: 'Clicked on react-customizable-progressbar examples'
-                                    })
-                                }
-                            >
-                                examples
-                            </Link>{' '}
-                            or play around{' '}
-                            <span className="mobile">
-                                <br />
-                            </span>{' '}
-                            with{' '}
-                            <Link
-                                to="/react-customizable-progressbar/generator"
-                                onClick={() =>
-                                    ReactGA.event({
-                                        category: 'User',
-                                        action: 'Clicked on react-customizable-progressbar generator'
-                                    })
-                                }
-                            >
-                                generator
-                            </Link>
+                            <span className="subtext">
+                                <span className="middot">&middot;</span>{' '}
+                                check{' '}
+                                <Link
+                                    to="/react-customizable-progressbar"
+                                    onClick={() =>
+                                        ReactGA.event({
+                                            category: 'User',
+                                            action: 'Clicked on react-customizable-progressbar examples'
+                                        })
+                                    }
+                                >
+                                    examples
+                                </Link>{' '}
+                                or play around with{' '}
+                                <Link
+                                    to="/react-customizable-progressbar/generator"
+                                    onClick={() =>
+                                        ReactGA.event({
+                                            category: 'User',
+                                            action: 'Clicked on react-customizable-progressbar generator'
+                                        })
+                                    }
+                                >
+                                    generator
+                                </Link>
+                            </span>
                         </p>
 
                         <p>
@@ -198,19 +188,21 @@ const IndexPage = () => (
                             >
                                 react-surfer-slider
                             </a>{' '}
-                            <span className="middot">&middot;</span>{' '}
-                            see{' '}
-                            <Link
-                                to="/react-surfer-slider"
-                                onClick={() =>
-                                    ReactGA.event({
-                                        category: 'User',
-                                        action: 'Clicked on react-surfer-slider examples'
-                                    })
-                                }
-                            >
-                                examples
-                            </Link>
+                            <span className="subtext">
+                                <span className="middot">&middot;</span>{' '}
+                                see{' '}
+                                <Link
+                                    to="/react-surfer-slider"
+                                    onClick={() =>
+                                        ReactGA.event({
+                                            category: 'User',
+                                            action: 'Clicked on react-surfer-slider examples'
+                                        })
+                                    }
+                                >
+                                    examples
+                                </Link>
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -221,7 +213,7 @@ const IndexPage = () => (
             <section className="skejtparky">
                 <a
                     className="logo"
-                    href="https://skejtparky.cz"
+                    href="https://skatespoty.cz"
                     target="_blank"
                     onClick={() =>
                         ReactGA.event({
@@ -230,11 +222,12 @@ const IndexPage = () => (
                         })
                     }
                 >
-                    <img src={skejtparkyLogo} alt="Skejtparky" />
+                    <img src={skejtparkyLogo} alt="Skatespoty" />
                 </a>
                 <div className="desc">
                     <p>
-                        <span>Find skateparks, pumptracks and street spots in your area</span>
+                        Find&nbsp;skateparks,&nbsp;pumptracks&nbsp;and{' '}
+                        street&nbsp;spots&nbsp;in&nbsp;your&nbsp;area
                     </p>
                 </div>
             </section>
@@ -265,19 +258,6 @@ const IndexPage = () => (
 
         <Fade bottom>
             <section className="nhlgram">
-                {/*<a
-                    className="logo"
-                    href="https://nhlgram.com"
-                    target="_blank"
-                    onClick={() =>
-                        ReactGA.event({
-                            category: 'User',
-                            action: 'Clicked on NHLgram'
-                        })
-                    }
-                >
-                    <img src={nhlgramLogo} alt="NHLgram" />
-                </a>*/}
                 <a
                     className="logo"
                     href="https://cesivnhl.cz"
@@ -292,62 +272,18 @@ const IndexPage = () => (
                     <img src={cesivNHLLogo} alt="Češi v NHL" />
                 </a>
                 <div className="desc">
-                    <p>
-                        <span>Video feed of Czech players in NHL</span>
-                        {/*<a
-                            className="github"
-                            href="https://github.com/martyan/nhlgram"
-                            target="_blank"
-                            onClick={() =>
-                                ReactGA.event({
-                                    category: 'User',
-                                    action: 'Clicked on NHLgram github'
-                                })
-                            }
-                        >
-                            <img src={githubLogoDark} alt="GitHub" />
-                        </a>*/}
-                    </p>
+                    <p>Video&nbsp;highlights, stats&nbsp;and&nbsp;rankings of Czech&nbsp;players&nbsp;in&nbsp;NHL</p>
                 </div>
             </section>
         </Fade>
-
-        {/*<Fade bottom>
-            <section className="entrydo">
-                <a
-                    className="logo"
-                    href="https://entry.do"
-                    target="_blank"
-                    onClick={() =>
-                        ReactGA.event({
-                            category: 'User',
-                            action: 'Clicked on Entrydo'
-                        })
-                    }
-                >
-                    <img src={entrydoLogo} alt="Entrydo" />
-                </a>
-                <div className="desc">
-                    <p>
-                        <b>Entry management system</b>
-                        <span className="mobile">
-                            <br />
-                        </span>{' '}
-                        for <b>smooth check-in</b> experience
-                        <span className="mobile">
-                            <br />
-                        </span>{' '}
-                        at <b>your event</b>.
-                    </p>
-                </div>
-            </section>
-        </Fade>*/}
 
         <Fade bottom>
             <section className="get-in-touch">
                 <div className="linked-in">
                     <div className="text">
-                        If you want to get in touch or just say Hi please send me a message on my
+                        If&nbsp;you&nbsp;want&nbsp;to&nbsp;see&nbsp;my{' '}
+                        professional&nbsp;working&nbsp;experience,<br />
+                        you can do so on my
                     </div>
                     <button className="cta">
                         <a
@@ -371,28 +307,6 @@ const IndexPage = () => (
                     </div>
 
                     <div className="author">
-                        {/*<p>
-                            Coded by{' '}
-                            <a href="/" className="mj">
-                                <img src={mj} alt="mj" />
-                            </a>
-                        </p>*/}
-                        {/*<p className="code">
-                            see the{' '}
-                            <a
-                                href="https://github.com/martyan/martinjuzl.com"
-                                target="_blank"
-                                onClick={() =>
-                                    ReactGA.event({
-                                        category: 'User',
-                                        action: 'Clicked on page source code'
-                                    })
-                                }
-                            >
-                                source code
-                            </a>{' '}
-                            if interested
-                        </p>*/}
                     </div>
                 </div>
             </section>

@@ -137,7 +137,7 @@
             margin: 0;
             font-weight: 300;
             font-size: 1.7em;
-            line-height: 140%;
+            line-height: 150%;
             color: white;
             text-align: center;
 
@@ -403,6 +403,12 @@
 
                 }
 
+                .subtext {
+                    display: block;
+                    font-size: 1rem;
+                    color: #ddd;
+                }
+
                 .middot {
                     margin: 0 7px;
                     font-size: 1.4em;
@@ -611,18 +617,18 @@
         }
 
         @media (min-width: $tablet) {
-            padding: 10vh 0;
+            padding: 10vh 0 15vh;
         }
 
         .logo {
 
             display: block;
             width: 100%;
-            max-width: 190px;
+            max-width: 180px;
             margin: 0 auto;
 
             @media (min-width: $tablet) {
-                max-width: 320px;
+                max-width: 300px;
             }
 
             img {
@@ -783,14 +789,14 @@
 
         .linked-in {
 
-            margin-bottom: 250px;
+            margin-bottom: 230px;
             text-align: center;
 
             .text {
 
                 font-weight: 300;
                 font-size: 1.2em;
-                line-height: 160%;
+                line-height: 180%;
                 margin-bottom: 30px;
 
                 @media (min-width: $tablet) {
