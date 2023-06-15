@@ -24,6 +24,7 @@ import GitHubGraph from '../components/GitHubGraph'
 import './index.scss'
 
 const INTERVAL = 2800
+const SPRING = { stiffness: 80, damping: 12 }
 
 const IndexPage = () => (
     <div className="martinjuzl">
@@ -64,7 +65,7 @@ const IndexPage = () => (
                     <br className="mobile" />
                     <TextLoop
                         interval={INTERVAL}
-                        springConfig={{ stiffness: 90 }}
+                        springConfig={SPRING}
                         className="loop"
                         children={[
                             'TypeScript + React + SASS',
@@ -74,7 +75,7 @@ const IndexPage = () => (
                     />
                 </h2>
                 <h2 className="logos">
-                    <TextLoop interval={INTERVAL} springConfig={{ stiffness: 90 }} className="loop">
+                    <TextLoop interval={INTERVAL} springConfig={SPRING} className="loop">
                         <div className="logo">
                             <img src={tsLogo} alt="TypeScript" />
                             <img src={reactLogo} alt="React" />
