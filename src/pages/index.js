@@ -241,7 +241,7 @@ const IndexPage = () => (
             </section>
         </Fade>
 
-        <Fade bottom>
+        {/*<Fade bottom>
             <section className="nhlgram">
                 <a
                     className="logo"
@@ -260,7 +260,7 @@ const IndexPage = () => (
                     <p>Video&nbsp;highlights, stats&nbsp;and&nbsp;rankings of Czech&nbsp;players&nbsp;in&nbsp;NHL</p>
                 </div>
             </section>
-        </Fade>
+        </Fade>*/}
 
         <Fade bottom>
             <section className="get-in-touch">
