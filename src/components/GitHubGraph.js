@@ -21,7 +21,7 @@ const GitHubGraph = () => {
             .then(body => {
                 const wrapper = document.createElement('div')
                 wrapper.innerHTML = body
-                const graph = wrapper.querySelector('svg.js-calendar-graph-svg')
+                const graph = wrapper.querySelector('.js-calendar-graph div')
                 graph.setAttribute('version', '1.1')
                 graph.setAttribute('xmlns', 'http://www.w3.org/2000/svg')
                 graph.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink')
